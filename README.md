@@ -1,2 +1,2 @@
 # SBFP
-SSH brutu force and DDoS attack protection
+SSH brute force and DDoS attack protection
