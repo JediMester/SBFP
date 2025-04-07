@@ -19,6 +19,7 @@ To make this script configurable as a systemd service:
    BAN_LIST_FILE=/var/log/banned_ips.txt
    BAN_TIME=3600 # default value in seconds
 3. Create a systemd service file at `/etc/systemd/system/ssh-brute-protection.service`:
+   
    [Unit]
    Description=SSH Brute Force Protection
    After=network.target
@@ -29,6 +30,7 @@ To make this script configurable as a systemd service:
 
    [Install]
    WantedBy=multi-user.target
+
 4. Enable and start the service:
    sudo systemctl enable ssh-brute-protection.service
    sudo systemctl start ssh-brute-protection.service
